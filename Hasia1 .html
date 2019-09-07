@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dahlia's CV</title>
+    
      <link rel= "stylesheet" href="style.css">
 </head>
 
@@ -136,14 +137,48 @@
             <hr color ="grey" size="0.5" > 
             <dt><strong>References</strong></dt>
         <dd>Available on request</dd>
+
+        <dd class="clear"></dd>
+            <hr color ="grey" size="0.5" > 
+            <dt><strong>Contact</strong></dt>
+        <dd>To send a message to Hasia Dahlia Yusuf,</br>
+            fill the contact form below and click "submit"</dd>
             
         <dd class="clear"></dd>
  </dl>
         
         <div class="clear"></div>
     
+    <div>
+        <div id="error"></div> 
+        <form name="theForm" method="POST" data.netlify ="true" onSubmit="return validateTextbox();">
+        <h4>&nbsp&nbsp&nbsp&nbspContact form</h4>
+        <div class="row">
+        <input type="text" id="name" name="Name" placeholder="Name" minlength="4"
+              required> </br> </br>
+        </div>
+        
+        <div class="row">
+        <input type="text" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$" placeholder="E-mail" 
+               required> </br> </br>
+        </div>
+        
+        <div class="row">
+        <input type="text" id="title" name="Title" placeholder="Title"
+               required> </br> </br> 
+        </div>
+            
+            <textarea form="theForm"  name="message" placeholder="Insert message" id="message"
+                      minlength="20" required></textarea>            
+        </div>
+        
+        <br>
+        
+        <button type="submit">Submit</button>
+        
+        </form>
     </div>
-
+    <script defer src= 'code.js'></script>
 </body>
 
 </html>

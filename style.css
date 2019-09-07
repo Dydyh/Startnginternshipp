@@ -50,6 +50,13 @@ body {
                  color: #999; 
                  font-weight: normal; 
                 }
+         h4 { 
+                 font-size: 20px; 
+                 margin: 0 0 6px 0;
+                 position: relative;
+                 text-align:left;
+                 padding: 2px;
+                }        
         p {
              margin: 0 0 16px 0;
              }
@@ -95,3 +102,38 @@ body {
         dd.clear { float: none;
              margin: 0; height: 15px; 
             }
+
+            #theForm {
+
+                color:white;
+                display: table;
+                padding: 15px;
+                background-color: rgb(54, 52, 52);
+                border: solid 0px rgb(189, 176, 176);
+                
+                }
+                
+                .row {
+                display: table-row;
+                }
+                
+                .row label {
+                display: table-cell;
+                padding: 2px;
+                text-align:right;
+                
+                }
+                
+                .row input {
+                display: table-cell;
+                padding: 2px;
+                }
+
+                 textarea {
+                    resize: vertical;
+                    max-height: 100px;
+                    }
+                    
+                
+
+                   
